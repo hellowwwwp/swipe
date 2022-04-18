@@ -2,7 +2,6 @@
 buildscript {
     ext.kotlin_version = '1.6.20'
 
-    //指定构建过程中的插件从哪里找
     repositories {
         google()
         jcenter()
