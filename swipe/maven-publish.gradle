@@ -1,0 +1,28 @@
+apply plugin: "maven-publish"
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+                // To use: implementation "com.github.hellowwwwp:swipe:0.0.1".
+                groupId = "com.hellowwwwp"
+                artifactId = "swipe"
+                version = "0.0.1"
+                // Publish with sources
+                artifact generateSourcesJar
+            }
+        }
+
+        repositories {
+
+        }
+    }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <com.hellowwwwp.swipe.SwipeMenuLayout
+        android:id="@+id/sml1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_right_menu1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="右侧菜单1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:sml_childType="menu"
+            app:sml_dragEdge="right"
+            app:sml_showMode="lay_down" />
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#abcdef"
+            android:gravity="center"
+            android:text="👈🏻内容1(滑动我)"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            app:sml_childType="content" />
+
+    </com.hellowwwwp.swipe.SwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <com.hellowwwwp.swipe.SwipeMenuLayout
+        android:id="@+id/sml2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_right_menu2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="右侧菜单2"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:sml_childType="menu"
+            app:sml_dragEdge="right"
+            app:sml_showMode="pull_out" />
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#abcdef"
+            android:gravity="center"
+            android:text="👈🏻内容2(滑动我)"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            app:sml_childType="content" />
+
+    </com.hellowwwwp.swipe.SwipeMenuLayout>
+
+</LinearLayout>

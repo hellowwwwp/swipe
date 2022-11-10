@@ -1,2 +1,3 @@
-rootProject.name = "your_name"
+rootProject.name = "swipe"
 include ':app'
+include ':swipe'

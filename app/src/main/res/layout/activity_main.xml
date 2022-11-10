@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
 
     <Button
+        android:id="@+id/btn_demo1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="简单使用" />
+
+    <Button
+        android:id="@+id/btn_demo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表-右边单个菜单" />
+
+    <Button
+        android:id="@+id/btn_demo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表-左右单个菜单" />
+
+    <Button
+        android:id="@+id/btn_demo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表-右边两个菜单" />
 
 </LinearLayout>

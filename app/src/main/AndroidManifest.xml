@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.your_name">
+    package="com.hellowwwwp.swipe">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
         <activity
-            android:name="com.example.your_name.MainActivity"
+            android:name=".demo.ListDoubleRightMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.ListSingleLeftRightMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.ListSingleRightMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.SimpleDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

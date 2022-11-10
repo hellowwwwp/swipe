@@ -1,4 +1,4 @@
-package com.example.your_name
+package com.hellowwwwp.swipe
 
 import org.junit.Test
 

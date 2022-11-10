@@ -1,4 +1,4 @@
-package com.example.your_name
+package com.hellowwwwp.swipe
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

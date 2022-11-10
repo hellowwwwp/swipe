@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="sml_swipeEnabled" format="boolean" />
+        <attr name="sml_strictInterceptEnabled" format="boolean" />
+        <attr name="sml_autoCloseEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout_Layout">
+        <attr name="sml_childType" format="enum">
+            <enum name="content" value="0" />
+            <enum name="menu" value="1" />
+        </attr>
+        <attr name="sml_dragEdge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="sml_showMode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="sml_dragParallax" format="float" />
+        <attr name="sml_dragPadding" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <com.hellowwwwp.swipe.SwipeMenuLayout
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:sml_childType="menu"
+            app:sml_dragEdge="right"
+            app:sml_dragParallax="0.8"
+            app:sml_showMode="pull_out">
+
+            <TextView
+                android:id="@+id/tv_right_menu1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#0000FF"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                tools:text="right menu1" />
+
+            <TextView
+                android:id="@+id/tv_right_menu2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                tools:text="right menu2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            app:sml_childType="content" />
+
+    </com.hellowwwwp.swipe.SwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#60000000" />
+
+</RelativeLayout>
